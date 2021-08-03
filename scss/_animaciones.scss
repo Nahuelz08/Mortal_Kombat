@@ -1,0 +1,59 @@
+@keyframes homeImagen {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes homeTexto {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes goroFade {
+    0% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes arenasMovimientoMobile {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(-250px);
+    }
+    50% {
+        transform: translate(-500px);
+    }
+    75% {
+        transform: translate(-250px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+@keyframes arenasMovimientoTablet {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(-350px);
+    }
+    50% {
+        transform: translate(-700px);
+    }
+    75% {
+        transform: translate(-350px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
