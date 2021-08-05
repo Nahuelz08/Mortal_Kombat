@@ -7304,16 +7304,30 @@ p {
 .titulo--centrado {
   text-align: center; }
 
-footer.footer {
-  background: linear-gradient(0deg, black 72%, #191919 92%, #1f1f1f 96%, #222222 98%, #252525 99%, #292929 100%);
+footer {
+  background: linear-gradient(0deg, black 50%, #191919 92%, #1f1f1f 96%, #222222 98%, #252525 99%, #292929 100%);
   border-top: solid rgba(255, 255, 255, 0.185);
-  grid-area: footer;
   margin-top: 0px;
   padding: 20px;
-  font-size: 12px;
+  font-size: 1rem;
   color: white;
   text-align: center;
   font-weight: 300; }
+  footer .footer__logo {
+    padding-bottom: 20px; }
+    footer .footer__logo img {
+      width: 250px; }
+  footer .footer__redes a {
+    margin-left: 20px;
+    margin-right: 20px; }
+    footer .footer__redes a .footer__iconSocial {
+      font-size: 2rem;
+      color: #c99c3c; }
+      footer .footer__redes a .footer__iconSocial:hover {
+        color: white;
+        animation-name: giro;
+        animation-duration: 0.5s;
+        animation-timing-function: linear; }
 
 h3 {
   font-size: 0.875rem; }
@@ -7357,6 +7371,8 @@ h3 {
 /* Fin General */
 /* Mobile */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footer__desktop {
+    display: none; }
   .row.shangTsungTorneoImgDesktop {
     display: none; }
   .historiaTorneo10 {
@@ -7397,6 +7413,19 @@ h3 {
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
   body {
     font-size: 1.125rem; }
+  .footer__desktop {
+    display: none; }
+  footer .footer__logo {
+    padding-bottom: 20px; }
+    footer .footer__logo img {
+      width: 300px; }
+  footer .footer__redes a {
+    margin-left: 20px;
+    margin-right: 20px; }
+    footer .footer__redes a .footer__iconSocial {
+      font-size: 3rem; }
+  footer h3 {
+    font-size: 1.25rem; }
   .row.shangTsungTorneoImgDesktop {
     display: none; }
   .encabezado__tituloIndex {
@@ -7461,6 +7490,8 @@ h3 {
     padding-left: 50px; }
   .dropdown-item {
     font-size: 1.563rem; }
+  .footer__mobile {
+    display: none; }
   .encabezado__tituloIndex {
     font-size: 4.5rem; }
   .historiaTorneo10 {
@@ -7575,3 +7606,10 @@ h3 {
     transform: translate(-350px); }
   100% {
     transform: translate(0px); } }
+
+@keyframes giro {
+  50% {
+    transform: rotate(180deg);
+    font-size: 2.5rem; }
+  100% {
+    transform: rotate(360deg); } }

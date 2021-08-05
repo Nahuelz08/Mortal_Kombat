@@ -117,16 +117,37 @@ p {
 .titulo--centrado {
     text-align: center;
 }
-footer.footer {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 72%, rgba(25,25,25,1) 92%, rgba(31,31,31,1) 96%, rgba(34,34,34,1) 98%, rgba(37,37,37,1) 99%, rgba(41,41,41,1) 100%); 
+footer {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(25,25,25,1) 92%, rgba(31,31,31,1) 96%, rgba(34,34,34,1) 98%, rgba(37,37,37,1) 99%, rgba(41,41,41,1) 100%); 
     border-top: solid rgba(255, 255, 255, 0.185);
-    grid-area: footer;
     margin-top: 0px;
     padding: 20px;
-    font-size: 12px;
+    font-size: 1rem;
     color: $blanco;
     text-align: center;
     font-weight: 300;
+    .footer__logo {
+        padding-bottom: 20px;
+        img {
+            width: 250px;
+        }
+    }
+    .footer__redes {
+        a {
+            margin-left: 20px;
+            margin-right: 20px;
+            .footer__iconSocial {
+                font-size: 2rem;
+                color: $doradoMk;
+                &:hover {
+                    color: $blanco;
+                    animation-name: giro;
+                    animation-duration: 0.5s;
+                    animation-timing-function:linear;
+                }
+            }
+        }
+    }
 }
 h3 {
     font-size: 0.875rem;
@@ -177,6 +198,9 @@ h3 {
         /* Fin General */
         /* Mobile */
 @media only screen and (min-width:0px) and (max-width:767px) {
+    .footer__desktop {
+        display: none;
+    }
     .row.shangTsungTorneoImgDesktop {
         display: none;
     }
@@ -231,6 +255,29 @@ h3 {
 @media only screen and (min-width:768px) and (max-width:1239px) {
     body {
         font-size: 1.125rem;
+    }
+    .footer__desktop {
+        display: none;
+    }
+    footer {
+        .footer__logo {
+            padding-bottom: 20px;
+            img {
+                width: 300px;
+            }
+        }
+        .footer__redes {
+            a {
+                margin-left: 20px;
+                margin-right: 20px;
+                .footer__iconSocial {
+                    font-size: 3rem;
+                }
+            }
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
     }
     .row.shangTsungTorneoImgDesktop {
         display: none;
@@ -321,6 +368,9 @@ h3 {
     .dropdown-item {
         font-size: 1.563rem;
     }    
+    .footer__mobile {
+        display: none;
+    }
     .encabezado__tituloIndex {
         font-size: 4.5rem;
     }
