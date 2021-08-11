@@ -17,6 +17,9 @@ body {
     background-color: $negro;    
     font-size: 1rem;
     font-family: 'Chakra Petch', sans-serif;
+    strong {
+        color: $doradoMk;
+    }
 }
 .paddingT {
     padding-top: $paddingT*2;
@@ -204,6 +207,9 @@ h3 {
     .row.shangTsungTorneoImgDesktop {
         display: none;
     }
+    .historiaTorneoDesktop {
+        display: none;
+    }
     .historiaTorneo10 {
         margin-top: 10px;
     }
@@ -284,6 +290,9 @@ h3 {
     }
     .encabezado__tituloIndex {
         font-size: 3.5rem;
+    }
+    .historiaTorneoDesktop {
+        display: none;
     }
     .historiaTorneo10 {
         margin-top: 20px;
@@ -374,8 +383,20 @@ h3 {
     .encabezado__tituloIndex {
         font-size: 4.5rem;
     }
+    .historiaTorneoMobile {
+        display: none;
+    }
+    .historiaTorneo__texto {
+        font-size: 1.15rem;
+    }
     .historiaTorneo10 {
         margin-top: 30px;
+    }
+    .historiaTorneo10__texto {
+        font-size: 1.15rem;
+    }
+    .historiaTorneo10B__texto {
+        font-size: 1.15rem;
     }
     .row.shangTsungTorneoImgMobile {
         display: none;
