@@ -18,7 +18,7 @@ body {
     font-size: 1rem;
     font-family: 'Chakra Petch', sans-serif;
     strong {
-        color: $doradoMk;
+        color: $doradoClaroMk;
     }
 }
 .paddingT {
@@ -158,6 +158,9 @@ h3 {
 .imagen__shangTsungIslandImg {
     border-radius: 50px;
 }
+.carousel {
+    border: solid $naranjaOscuroMk;
+}
 .iconPj img {
     border: solid $naranjaOscuroMk ;
 }
@@ -168,6 +171,7 @@ h3 {
 }
 .historiaPj {
     margin-top: 20px;
+    text-align: center;
 }
 .arenas__imagen {
     overflow: hidden;
@@ -190,12 +194,24 @@ h3 {
 .img__imagenes {
     border : solid $naranjaOscuroMk;
 }
+.video {
+    border: solid $naranjaOscuroMk;
+}
 .parrafo__404 {
     p {
         a {
             color:$doradoClaroMk;
             text-decoration: underline;
         }
+    }
+}
+.texto__videos {
+    font-size: 3rem;
+    text-align: center;
+    color: $naranjaMk;
+    span {
+        color: $doradoClaroMk;
+        text-decoration: underline;
     }
 }
         /* Fin General */
@@ -255,6 +271,9 @@ h3 {
             height: 100vh;
             padding-bottom: 150px;
         }
+    }
+    .texto__videos {
+        font-size: 1.5rem;
     }
 }
         /* Tablet */
@@ -422,25 +441,11 @@ h3 {
         background: radial-gradient(circle, rgba(37,37,37,1) 3%, rgba(0,0,0,1) 59%);
     }
     .historiaPj {
-        text-align: center;
         padding-top: 50px;
     }
     .arenas__imagen {
         img {
             width: 100%;
-        }
-    }
-    .arenas__titulo {
-        p {
-            font-size: 2.563rem;
-            text-decoration: underline;
-            text-align: center;
-            position: absolute;
-            transform: translateY(-250px);
-            background-color: rgba(0, 0, 0, 0.6 );
-            width: 100%;
-            padding-bottom: $paddingB -20;
-            padding-top: $paddingT -20;
         }
     }
     .arenas {
@@ -457,17 +462,16 @@ h3 {
             color: #f1f1f1;
             width: 100%; 
             padding: 20px;
+            font-size: 1.15rem;
         }
     }
     .arenasDesktop__titulo {
+        color: $doradoMk;
         font-size: 2.188rem;
         text-decoration: underline;
     }
     .padding__arenas {
         padding-bottom: $paddingB/2;
-    }
-    .video {
-        width: 75%;
     }
     .imagen__error404 {
         width: 100%;
@@ -491,5 +495,10 @@ h3 {
                 }
             }
         }
+    }
+    .texto__videos {
+        padding-top: 140px;
+        padding-bottom: 140px;
+        background: radial-gradient(circle, rgba(37,37,37,1) 3%, rgba(0,0,0,1) 75%);
     }
 }

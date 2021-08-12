@@ -7202,7 +7202,7 @@ body {
   font-size: 1rem;
   font-family: 'Chakra Petch', sans-serif; }
   body strong {
-    color: #c99c3c; }
+    color: #F3C359; }
 
 .paddingT {
   padding-top: 100px; }
@@ -7337,6 +7337,9 @@ h3 {
 .imagen__shangTsungIslandImg {
   border-radius: 50px; }
 
+.carousel {
+  border: solid #cc3c0850; }
+
 .iconPj img {
   border: solid #cc3c0850; }
 
@@ -7346,7 +7349,8 @@ h3 {
   padding-top: 20px; }
 
 .historiaPj {
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: center; }
 
 .arenas__imagen {
   overflow: hidden; }
@@ -7366,9 +7370,20 @@ h3 {
 .img__imagenes {
   border: solid #cc3c0850; }
 
+.video {
+  border: solid #cc3c0850; }
+
 .parrafo__404 p a {
   color: #F3C359;
   text-decoration: underline; }
+
+.texto__videos {
+  font-size: 3rem;
+  text-align: center;
+  color: #CC3D08; }
+  .texto__videos span {
+    color: #F3C359;
+    text-decoration: underline; }
 
 /* Fin General */
 /* Mobile */
@@ -7411,7 +7426,9 @@ h3 {
       font-family: mk4;
       font-size: 2rem;
       height: 100vh;
-      padding-bottom: 150px; } }
+      padding-bottom: 150px; }
+  .texto__videos {
+    font-size: 1.5rem; } }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
@@ -7527,20 +7544,9 @@ h3 {
     background: #252525;
     background: radial-gradient(circle, #252525 3%, black 59%); }
   .historiaPj {
-    text-align: center;
     padding-top: 50px; }
   .arenas__imagen img {
     width: 100%; }
-  .arenas__titulo p {
-    font-size: 2.563rem;
-    text-decoration: underline;
-    text-align: center;
-    position: absolute;
-    transform: translateY(-250px);
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    padding-bottom: 50px -20;
-    padding-top: 50px -20; }
   .arenas {
     display: none; }
   .arenasDesktop {
@@ -7553,14 +7559,14 @@ h3 {
       background: rgba(0, 0, 0, 0.5);
       color: #f1f1f1;
       width: 100%;
-      padding: 20px; }
+      padding: 20px;
+      font-size: 1.15rem; }
   .arenasDesktop__titulo {
+    color: #c99c3c;
     font-size: 2.188rem;
     text-decoration: underline; }
   .padding__arenas {
     padding-bottom: 25px; }
-  .video {
-    width: 75%; }
   .imagen__error404 {
     width: 100%;
     min-height: 100vh;
@@ -7576,7 +7582,11 @@ h3 {
       .imagen__error404 .parrafo__404 p a:hover {
         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 11px 1px 15px #CE5937;
         color: white;
-        text-decoration: none; } }
+        text-decoration: none; }
+  .texto__videos {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background: radial-gradient(circle, #252525 3%, black 75%); } }
 
 @keyframes homeImagen {
   0% {
